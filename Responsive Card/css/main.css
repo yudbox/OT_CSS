@@ -1,0 +1,772 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cross {
+  background: #070c24;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #fff;
+  margin: 20px;
+}
+
+.cross .container .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #006dbc;
+}
+
+.cross .container .imgBx:before {
+  content: 'Nike';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #000;
+  opacity: 0.2;
+  font-size: 8em;
+  font-weight: 800;
+
+
+}
+.cross .container .imgBx img {
+  position: relative;
+  width: 700px;
+  transform: rotate(-30deg);
+  left: -50px;
+}
+
+.cross .container .details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.cross .container .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  line-height: 0.8em;
+  color: #444;
+}
+
+.cross .container .details h2 span{
+  font-size: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.cross .container .details p{
+min-width: 85%;
+margin-left: 15%;
+color: #333333;
+font-size: 15px;
+}
+
+.cross .container .details h3{
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #a2a2a2;
+  float: left;
+  }
+
+  .cross .container .details button{
+    background: #006abc;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    }
+
+@media (max-width: 1080px) {
+  .cross .container{
+    height: auto;
+  }
+
+  .cross .container .imgBx{
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .cross .container .imgBx img{
+    left: initial;
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+
+  .cross .container .details{
+    width: 100% !important;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .cross .container .details p{
+    min-width: 100%;
+    margin-left: 0;
+
+    }
+}
+
+/* Progress circle bubuliki*/
+.progress-circles {
+  font-family: Roboto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #101010;
+}
+
+.progress-circles__container {
+  position: relative;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+.progress-circles__card {
+position: relative;
+width: 250px;
+background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+border-radius: 4px;
+text-align: center;
+overflow: hidden;
+transition: 0.5s;
+}
+
+.progress-circles__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.5)
+}
+.progress-circles__card:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.03);
+  pointer-events: none;
+  z-index: 1;
+}
+.progress-circles__percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background: #222222;
+  z-index: 1000;
+}
+.progress-circles__percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.progress-circles__percent .number h2 {
+  color: #777777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.progress-circles__card:hover .progress-circles__percent .number h2 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.progress-circles__card .progress-circles__percent .number h2 span {
+font-size: 24px;
+color: #777;
+transition: 0.5s;
+}
+
+.progress-circles__card:hover .progress-circles__percent .number h2 span {
+
+color: #fff;
+}
+
+.progress-circles__card:hover .text{
+  color: #ffffff;
+}
+.progress-circles__percent .text {
+  position: relative;
+  margin-top: 20px;
+  color: #777;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.progress-circles__card svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.progress-circles__card svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.progress-circles__card svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.progress-circles__card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #00ff43
+}
+.progress-circles__card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: #00a1ff
+}
+.progress-circles__card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 55) / 100);
+  stroke: #ff04f7
+}
+
+.nike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+.nike__container {
+  position: relative;
+}
+
+.nike__card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.nike__card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+
+}
+
+.nike__card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.nike__card:after {
+  content: 'Nike';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04)
+
+}
+
+.nike__imxBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.nike__card:hover .nike__imxBox {
+  top: 20%;
+  transition: translateY(20%);
+}
+
+.nike__imxBox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.nike__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.nike__content {
+  height: 210px;
+}
+
+.nike__content h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.nike__size,
+.nike__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nike__card:hover .nike__size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.nike__card:hover .nike__color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.nike__size h3,
+.nike__color h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+
+}
+
+.nike__size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background-color: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.nike__size span:hover {
+  background-color: #9bdc28;
+}
+
+.nike__color span {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nike__color span:nth-child(2) {
+  background-color: #9bdc28;
+}
+.nike__color span:nth-child(3) {
+  background-color: #03a9f4;
+}
+.nike__color span:nth-child(4) {
+  background-color: #e91e63;
+}
+.nike__link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.nike__card:hover .nike__link a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.noteCard {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+.noteCard__container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.noteCard__card {
+  position: relative;
+}
+
+.noteCard__face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.noteCard__face.noteCard__face1 {
+  position: relative;
+  background-color: rgb(112, 112, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.noteCard__card:hover .noteCard__face.noteCard__face1 {
+  transform: translateY(0px);
+  background-color: #ff0057;
+}
+
+.noteCard__pic {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.noteCard__card:hover .noteCard__pic {
+  opacity: 1;
+
+}
+
+.noteCard__pic img{
+  display: inline-block;
+  max-width: 100px;
+
+}
+
+.noteCard__pic h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.noteCard__face.noteCard__face2 {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-100px);
+}
+.noteCard__card:hover .noteCard__face.noteCard__face2 {
+  transform: translateY(0px);
+
+}
+
+.noteCard__face.noteCard__face2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.noteCard__face.noteCard__face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.noteCard__face.noteCard__face2 a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.foodShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fada3e;
+}
+
+.foodShop__container {
+  position: relative;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.foodShop__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.foodShop__card:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.foodShop__imgBx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #000;
+}
+
+.foodShop__imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foodShop__content {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodShop__content div {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .foodShop__container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 50px;
+  }
+
+  .foodShop__card {
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .foodShop__card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .foodShop__imgBx,
+  .foodShop__content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .foodShop__card {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .foodShop__card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .foodShop__imgBx,
+  .foodShop__content {
+    width: 100%;
+  }
+
+  .foodShop__content {
+    height: 200px;
+  }
+}
+
+/* /////////////////////////////////////////////////////// */
+  /* для того что б все работало нужно зайти на сайт https://micku7zu.github.io/vanilla-tilt.js/
+  и подключить js-файл */
+
+.paralax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.paralax__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  transform-style: preserve-3d;
+}
+
+.paralax__box {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  margin: 60px 0;
+  background-color: #000;
+  transform-style: preserve-3d;
+}
+
+.paralax__box:hover {
+  box-shadow: 0 50px 80px rgba(0,0,0,.2)
+}
+
+.paralax__imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.paralax__imgBx img {
+  height: 368px;
+}
+
+.paralax__content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+  background-color: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 40px 25px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.paralax__box:hover .paralax__content {
+  transform: translateZ(20px) scaleY(1);
+}
+
+.wavePic {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #008aff, #ff137d), url(../img/wave/bg.jpg) no-repeat center center;
+  background-blend-mode: screen;
+  background-size: cover;
+}
+
+.wavePic__content {
+  max-width: 700px;
+}
+
+.wavePic__title {
+  font-size: 3em;
+  color: #fff;
+}
+
+.wavePic__text {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.wavePic__img img {
+  position: relative;
+  max-width: 350px;
+  z-index: 1000;
+}
+
+.wavePic__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

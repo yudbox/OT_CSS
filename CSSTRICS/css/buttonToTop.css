@@ -1,0 +1,23 @@
+.buttonToTop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.buttonToTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}

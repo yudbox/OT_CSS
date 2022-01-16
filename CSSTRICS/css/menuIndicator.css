@@ -1,0 +1,31 @@
+.menuIndicator_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+}
+
+.menuIndicator {
+    position: relative;
+    display: flex;
+}
+
+.menuIndicator a {
+    position: relative;
+    margin: 0 20px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menuIndicator #indicator_marker {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #000;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+

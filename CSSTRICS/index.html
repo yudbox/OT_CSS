@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>CSS Tricks</title>
+</head>
+
+<body>
+    <div id="preogressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <main>
+        <aside></aside>
+        <div class="main_container">
+            <div class="menuIndicator_container">
+                <nav class="menuIndicator">
+                    <div id="indicator_marker"></div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="glowingCard_container">
+                <ul class="glowingCard">
+                    <li>
+                        <label>
+                            <input type="checkbox" class="glowingCard_input" name="" id="">
+                            <div class="icon"><i class="fa fa-glass" aria-hidden="true"></i></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="glowingCard_input" name="" id="">
+                            <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="glowingCard_input" name="" id="">
+                            <div class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="glowingCard_input" name="" id="">
+                            <div class="icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" class="glowingCard_input" name="" id="">
+                            <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div id="liquid_loader_container" class="liquid_loader_container">
+                <div class="liquid_loader">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:7;"></span>
+                </div>
+                <svg>
+                    <filter id="gooey">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                        <feColorMatrix values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 20 -10
+                        " />
+                    </filter>
+                </svg>
+            </div>
+            <div id="smoked_letters_container" class="smoked_letters_container">
+                <div class="smoked_letters">
+                    <video src="./video/smoke.mp4" class="smoked_letters_video" autoplay muted></video>
+                    <h1 class="smoked_letters_title">
+                        <span>A</span>
+                        <span>L</span>
+                        <span>E</span>
+                        <span>K</span>
+                        <span>S</span>
+                        <span>A</span>
+                        <span>N</span>
+                        <span>D</span>
+                        <span>R</span>
+                    </h1>
+                </div>
+            </div>
+            <div id="threeResponsiveCards_container" class="threeResponsiveCards_container">
+                <div class="threeResponsiveCards">
+                    <div class="card">
+                        <div class="card__img_box">
+                            <img src="/img/threeResponseCard/img1.jpg" alt="card">
+                        </div>
+                        <div class="card__content">
+                            <h2>Card One</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non et ipsum, vero
+                                dolorem consequuntur quas voluptate porro ex deleniti enim? Exercitationem commodi
+                                labore ipsum consectetur, error recusandae quae dolorem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img_box">
+                            <img src="/img/threeResponseCard/img2.jpg" alt="card">
+                        </div>
+                        <div class="card__content">
+                            <h2>Card two</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non et ipsum, vero
+                                dolorem consequuntur quas voluptate porro ex deleniti enim? Exercitationem commodi
+                                labore ipsum consectetur, error recusandae quae dolorem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img_box">
+                            <img src="/img/threeResponseCard/img3.jpg" alt="card">
+                        </div>
+                        <div class="card__content">
+                            <h2>Card three</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non et ipsum, vero
+                                dolorem consequuntur quas voluptate porro ex deleniti enim? Exercitationem commodi
+                                labore ipsum consectetur, error recusandae quae dolorem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonToTop_conainer">
+                <div id="buttonToTop1" class="buttonToTop" onclick="scrollToTop()">
+                    TOP
+                </div>
+            </div>
+            <div class="wallClock_container">
+                <div class="wallClock">
+                    <div class="hour">
+                        <div id="hr" class="hr"></div>
+                    </div>
+                    <div class="min">
+                        <div id="mn" class="mn"></div>
+                    </div>
+                    <div class="sec">
+                        <div id="sc" class="sc"></div>
+                    </div>
+                </div>
+                <div onclick="switchClock()" class="wallClock_switcher"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
