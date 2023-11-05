@@ -1,2 +1,24 @@
 node_modules
 HOVER AFFECTS/project/node_modules
+
+# dependencies
+/styled-components/node_modules
+/styled-components/.pnp
+/styled-components/.pnp.js
+
+# testing
+/styled-components/coverage
+
+# production
+/styled-components/build
+
+# misc
+/styled-components/.DS_Store
+/styled-components/.env.local
+/styled-components/.env.development.local
+/styled-components/.env.test.local
+/styled-components/.env.production.local
+
+/styled-components/npm-debug.log*
+/styled-components/yarn-debug.log*
+/styled-components/yarn-error.log*
